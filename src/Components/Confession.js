@@ -10,8 +10,10 @@ export default function ConfessionApp() {
   const [errors, setErrors] = useState({ title: "", confession: "" });
   const [newConfessionId, setNewConfessionId] = useState(null);
 
-  const GET_CONFESSIONS_URL = process.env.REACT_APP_GET_CONFESSION;
-  const ADD_CONFESSION_URL = process.env.REACT_APP_ADD_CONFESSION;
+  const GET_CONFESSIONS_URL =
+    "https://zyy44ecr46.execute-api.us-east-1.amazonaws.com/dev";
+  const ADD_CONFESSION_URL =
+    "https://3hxft73hv1.execute-api.us-east-1.amazonaws.com/dev";
 
   const getConfession = async () => {
     try {
